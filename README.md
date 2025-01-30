@@ -35,23 +35,8 @@ The models were ranked based on the **TOPSIS method**, and the best-performing m
 | csebuetnlp/mT5_multilingual_XLSum | 0.111 | 0.000 | 0.074 | 1.21 | 0.848 | 0.011 | 4 |
 
 ## Visualization
-### Model Performance
-```python
-import matplotlib.pyplot as plt
-import pandas as pd
 
-# Load results.csv
-df = pd.read_csv("results.csv")
-
-# Plot TOPSIS Scores
-plt.figure(figsize=(8, 5))
-plt.bar(df['Unnamed: 0'], df['TOPSIS Score'], color=['blue', 'green', 'red', 'purple'])
-plt.xlabel("Models")
-plt.ylabel("TOPSIS Score")
-plt.title("TOPSIS Ranking of Text Summarization Models")
-plt.xticks(rotation=45)
-plt.show()
-```
+<img title="Model Performance" alt="Visualise The Results Above" src="https://github.com/khwaishagarwal/Text-Summarisation-Topsis/blob/main/Topsis%20Score.png">
 
 ## How to Use
 1. Clone the repository:
